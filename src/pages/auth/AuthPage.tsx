@@ -10,10 +10,10 @@ export const AuthPage = () => {
   const [name, setName] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsLoading(false);
   };
 
@@ -25,17 +25,16 @@ export const AuthPage = () => {
   };
 
   return (
-    <BackgroundLines className="min-h-screen bg-gradient-to-br from-sky-light via-white to-cloud-gray">
-      <div className="min-h-screen flex items-center justify-center p-4 relative">
-
-
+    <BackgroundLines className="min-h-screen bg-gradient-to-br from-sky-light via-white to-cloud-gray relative overflow-hidden">
+      <div className="min-h-screen flex items-center justify-center p-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="w-full max-w-md relative z-10"
+          className="w-full max-w-md"
         >
           <div className="bg-white/90 backdrop-blur-xl p-8 rounded-2xl shadow-2xl border border-white/50">
+            {/* Content remains unchanged */}
             <motion.div
               className="text-center mb-8"
               initial={{ opacity: 0, y: -20 }}
@@ -73,7 +72,6 @@ export const AuthPage = () => {
                   {isLogin ? 'Welcome Back!' : 'Join ClubCloud'}
                 </motion.h1>
               </AnimatePresence>
-
               <motion.p
                 className="text-gray-600 mt-2"
                 initial={{ opacity: 0 }}
@@ -81,8 +79,8 @@ export const AuthPage = () => {
                 transition={{ delay: 0.3 }}
               >
                 {isLogin
-                  ? 'Sign in to connect with your STEM Academy clubs'
-                  : 'Create an account to get started with STEM clubs'}
+                  ? 'Sign in to connect with your S.T.E.M. Academy clubs'
+                  : 'Create an account to get started with S.T.E.M. clubs'}
               </motion.p>
             </motion.div>
 

@@ -68,27 +68,21 @@ const SVG = ({
   ];
 
   const colors = [
-    "#1976D2",  // Primary blue
-    "#90CAF9",  // Light blue
-    "#64B5F6",  // Sky blue
-    "#2196F3",  // Bright blue
-    "#1E88E5",  // Medium blue
-    "#1565C0",  // Deep blue
-    "#0D47A1",  // Dark blue
-    "#82B1FF",  // Light vivid blue
-    "#448AFF",  // Vivid blue
-    "#2979FF",  // Intense blue
-    "#2962FF",  // Rich blue
-    "#E3F2FD",  // Very light blue
-    "#42A5F5",  // Clear blue
-    "#1976D2",  // Standard blue
-    "#0288D1",  // Ocean blue
-    "#01579B",  // Deep ocean blue
-    "#B3E5FC",  // Pale sky blue
-    "#4FC3F7",  // Fresh blue
-    "#03A9F4",  // Bright sky blue
-    "#039BE5",  // Strong blue
-    "#0277BD"   // Deep water blue
+    "#FFD700",  // Bright gold
+    "#FFC107",  // Standard gold
+    "#FFB300",  // Deep gold
+    "#FFD700",  // Bright gold
+    "#FFC107",  // Standard gold
+    "#FFB300",  // Deep gold
+    "#FFD700",  // Bright gold
+    "#FFC107",  // Standard gold
+    "#FFB300",  // Deep gold
+    "#FFD700",  // Bright gold
+    "#FFC107",  // Standard gold
+    "#FFB300",  // Deep gold
+    "#FFD700",  // Bright gold
+    "#FFC107",  // Standard gold
+    "#FFB300",  // Deep gold
   ];
   return (
     <motion.svg
